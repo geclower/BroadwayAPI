@@ -1,0 +1,62 @@
+[
+    {
+        "title": "& Juliet",
+        "runTime": "2 hours and 30 minutes",
+        "theater": "Stephen Sondheim Theatre",
+        "theaterAddress": "124 W 43rd St",
+        "openDate": "November 17, 2022",
+        "closeDate": "N/A",
+        "intermission": true,
+        "isMusical": true,
+        "buyTickets": "https://criterionticketing.com/and-juliet",
+        "officalSite": "https://andjulietbroadway.com/"
+    },
+    {
+        "title": "Aladdin",
+        "runTime": "2 hours and 30 minutes",
+        "theater": "New Amsterdam Theatre",
+        "theaterAddress": "214 W 42nd St",
+        "openDate": "March 20, 2014",
+        "closeDate": "N/A",
+        "intermission": true,
+        "isMusical": true,
+        "buyTickets": "https://www.ticketmaster.com/artist/1858715?irgwc=1&clickid=2DS0p5VL4xyPWIFQXOWLyz2hUkH3Y8zfNQamXU0&camefrom=CFC_BUYAT_255301&impradid=255301&REFERRAL_ID=tmfeedbuyat255301&wt.mc_id=aff_BUYAT_255301&utm_source=255301-Playbill&impradname=Playbill&utm_medium=affiliate&ircid=4272",
+        "officalSite": "https://aladdinthemusical.com/"
+    },
+    {
+        "title": "Appropriate",
+        "runTime": "2 hours and 40 minutes",
+        "theater": "Belasco Theatre",
+        "theaterAddress": "111 W 44th St",
+        "openDate": "December 18, 2023",
+        "closeDate": "July 23, 2024",
+        "intermission": true,
+        "isMusical": false,
+        "buyTickets": "https://www.telecharge.com/Appropriate-tickets?AID=BWY001431600&utm_source=show_site&utm_campaign=AppropriateSS&utm_medium=web&utm_id=BWY001431600&_gl=1*n1bsd1*_ga*MTg4Nzk4NzM5NS4xNzA5NjQ4ODc2*_ga_BN3Y1YZT4P*MTcwOTY0ODg3NS4xLjAuMTcwOTY0ODg3NS4wLjAuMA..#_gl=1*6ijpri*_gcl_aw*R0NMLjE3MDk2NDg4NzUuQ2p3S0NBaUFvcHV2QmhCQ0Vpd0FtOGphTVJTS0NmeXgxVUQ0dVZyMVlFd19zVThabGlQU19uSzE1MHh3bVljNGRmY2ExNjlmTi1EUWx4b0N5X01RQXZEX0J3RQ..*_gcl_au*MTI5NDAxNjY4Ny4xNzA5NjQ4ODc1",
+        "officalSite": "https://appropriateplay.com/"
+    },
+    {
+        "title": "Back to the Future",
+        "runTime": "2 hours and 40 minutes",
+        "theater": "Winter Garden Theater",
+        "theaterAddress": "1634 Broadway (at W. 50th St)",
+        "openDate": "August 3, 2023",
+        "closeDate": "N/A",
+        "intermission": true,
+        "isMusical": true,
+        "buyTickets": "https://www.telecharge.com/Broadway/Back-to-the-Future-the-Musical/Overview?AID=AFF000009900&cm_mmc=Playbill-_-affiliate-_-web-_-AFF000009900",
+        "officalSite": "https://www.backtothefuturemusical.com/new-york/"
+    },
+    {
+        "title": "A Beautiful Noise, The Neil Diamond Musical",
+        "runTime": "2 hours and 15 minutes",
+        "theater": "Broadhurst Theatre",
+        "theaterAddress": "235 W 44th St",
+        "openDate": "December 4, 2022",
+        "closeDate": "June 30th, 2024",
+        "intermission": true,
+        "isMusical": true,
+        "buyTickets": "https://www.telecharge.com/Broadway/A-Beautiful-Noise-The-Neil-Diamond-Musical/Overview?AID=AFF000009900&cm_mmc=Playbill-_-affiliate-_-web-_-AFF00000990",
+        "officalSite": "https://abeautifulnoisethemusical.com/"
+    }
+]
