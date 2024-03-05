@@ -18,7 +18,7 @@ const ShowSchema = new mongoose.Schema({
   intermission: Boolean,
   isMusical: Boolean,
   buyTickets: String,
-  officalSite: String,
+  officialSite: String,
   posterImage: String
 });
 

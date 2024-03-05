@@ -29,8 +29,7 @@ export const getShow = async (req, res) => {
 
 export const createShow = async (req, res) => {
     try {
-        const show = new Show(req.body)
-        await show.save()
+        const show = await Show.create([...req.body])
         res.status(201).json(show)
 
     } catch (error) {
