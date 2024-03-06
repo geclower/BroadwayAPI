@@ -71,3 +71,51 @@ export const deleteShow = async (req, res) => {
     }
 }
 
+export const getClosing = async (req, res) => {
+    try {
+        const shows = await Show.find({ isClosing: true });
+        res.json(shows)
+        
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({ error: error.message })
+    }
+}
+
+export const getMusicals = async (req, res) => {
+    try {
+        const shows = await Show.find({ isMusical: true });
+        res.json(shows)
+        
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({ error: error.message })
+    }
+}
+
+export const getNonMusicals = async (req, res) => {
+    try {
+        const shows = await Show.find({ isMusical: false });
+        res.json(shows)
+        
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({ error: error.message })
+    }
+}
+
+export const nameShow = async (req, res) => {
+    try {
+        const { name } = req.params;
+        const show = await Show.findOne({title: name})
+
+        if (show) {
+            return res.json(show)
+        }
+        
+        res.status(404).json({ message: "Show not found."})
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({ error: error.message })
+    }
+}
