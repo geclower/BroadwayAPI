@@ -4,15 +4,21 @@ This is your one stop shop for shows that are currently playing on broadway!
 
 ## Get Requests:
 
-`api/shows` - This will provide an array of objects of every play and musical currently playing on broadway.
+`api/shows` - This will provide an array of objects of every play and musical currently running on broadway.
 
-`api/shows/closing` - This will return only the shows that has an annouced closing date.
+`api/shows/closing` - This will return only the shows that have an annouced closing date.
 
 `api/shows/musicals` - This will give an array of objects of only the musicals currently running.
 
 `api/shows/nonmusicals` - This will give an array of objects of only the plays currently running.
 
-`api/shows/*name of show*` - This will allow a singular search based on the title of the show. The formatting of this request is specific. **The title needs to be capitalized.**  `api/shows/Hamilton` will work. `api/shows/hamilton` will not. If the show has multiple words in the title the formatting should be as follows: `api/shows/The%20Lion%20King`. If the show has punctuation in the title just use it as normal. The formatting is: `api/shows/Moulin%20Rouge!` or `api/shows/&%20Juliet`.
+`api/shows/:name` - This will allow a singular search based on the title of the show. 
+
+- The formatting of this request is specific. **The title needs to be capitalized.**  `api/shows/Hamilton` will work. `api/shows/hamilton` will not. 
+
+- If the show has multiple words in the title the formatting should be as follows: `api/shows/The%20Lion%20King`. 
+    
+- If the show has punctuation in the title just use it as normal. The formatting is: `api/shows/Moulin%20Rouge!` or `api/shows/&%20Juliet`.
 
 The following is an example of the data set that each object provides:
 
@@ -101,7 +107,11 @@ If using the ID, use the following format for your Update Request: `api/shows/id
 
 If using the title, use the following format: `api/shows/name`
 
-**The title needs to be capitalized.**  `api/shows/Hamilton` will work. `api/shows/hamilton` will not. If the show has multiple words in the title the formatting should be as follows: `api/shows/The%20Lion%20King`. If the show has punctuation in the title just use it as normal. The formatting is: `api/shows/Moulin%20Rouge!` or `api/shows/&%20Juliet`.
+- **The title needs to be capitalized.**  `api/shows/Hamilton` will work. `api/shows/hamilton` will not. 
+
+- If the show has multiple words in the title the formatting should be as follows: `api/shows/The%20Lion%20King`. 
+
+- If the show has punctuation in the title just use it as normal. The formatting is: `api/shows/Moulin%20Rouge!` or `api/shows/&%20Juliet`.
 
 
 ## Deleting a Show
@@ -114,9 +124,14 @@ If using the ID, use the following format for your Delete Request: `api/shows/id
 
 If using the title, use the following format: `api/shows/name`
 
-**The title needs to be capitalized.** 
-`api/shows/Hamilton` will work. `api/shows/hamilton` will not. If the show has multiple words in the title the formatting should be as follows: `api/shows/The%20Lion%20King`. If the show has punctuation in the title just use it as normal. The formatting is: `api/shows/Moulin%20Rouge!` or `api/shows/&%20Juliet`.
+- **The title needs to be capitalized.**  `api/shows/Hamilton` will work. `api/shows/hamilton` will not. 
+
+- If the show has multiple words in the title the formatting should be as follows: `api/shows/The%20Lion%20King`. 
+
+- If the show has punctuation in the title just use it as normal. The formatting is: `api/shows/Moulin%20Rouge!` or `api/shows/&%20Juliet`.
 
 __________________________________
 
 See you at the show!
+
+![Gif of two actors bowing](https://i.gifer.com/7Qt7.gif)
