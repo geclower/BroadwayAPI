@@ -12,8 +12,10 @@ router.get('/:id', controllers.getShow)
 
 router.post('/', controllers.createShow)
 
+router.put("/:name", controllers.updateShowByName)
 router.put("/:id", controllers.updateShow)
 
+router.delete("/:name", controllers.deleteShowByName)
 router.delete("/:id", controllers.deleteShow)
 
 export default router

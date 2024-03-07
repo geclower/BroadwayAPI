@@ -119,3 +119,36 @@ export const nameShow = async (req, res) => {
         res.status(500).json({ error: error.message })
     }
 }
+
+export const deleteShowByName = async (req, res) => {
+    try {
+        const { name } =  req.params
+        const deleted = await Show.findOneAndDelete({title: name})
+
+        if(deleted){
+            return res.status(201).send("Show deleted.")
+        }
+
+        throw new Error("Show not found")
+
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({ error: error.message })
+    }
+}
+
+export const updateShowByName = async (req, res) => {
+    try {
+        const { name } = req.params
+        const show = await Show.findOneAndUpdate({title: name}, req.body)
+
+        if(show){
+        return res.status(201).json(show)
+        }
+        
+        res.status(404).json({message: "Show not found"})
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({ error: error.message })
+    }
+}

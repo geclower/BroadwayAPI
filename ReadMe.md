@@ -2,7 +2,7 @@
 
 This is your one stop shop for shows that are currently playing on broadway!
 
-## Endpoints:
+## Get Requests:
 
 `api/shows` - This will provide an array of objects of every play and musical currently playing on broadway.
 
@@ -12,7 +12,7 @@ This is your one stop shop for shows that are currently playing on broadway!
 
 `api/shows/nonmusicals` - This will give an array of objects of only the plays currently running.
 
-`api/shows/*name of show*` - This will allow a singular search based on the title of the show. The formatting of this request is specific. The title does need to be capitalized. `api/shows/Hamilton` will work. `api/shows/hamilton` will not. If the show has multiple words in the title the formatting should be as follows: `api/shows/The%20Lion%20King`. If the show has punctuation in the title just use it as normal. The formatting is: `api/shows/Moulin%20Rouge!` or `api/shows/&%Juliet`.
+`api/shows/*name of show*` - This will allow a singular search based on the title of the show. The formatting of this request is specific. **The title needs to be capitalized.**  `api/shows/Hamilton` will work. `api/shows/hamilton` will not. If the show has multiple words in the title the formatting should be as follows: `api/shows/The%20Lion%20King`. If the show has punctuation in the title just use it as normal. The formatting is: `api/shows/Moulin%20Rouge!` or `api/shows/&%20Juliet`.
 
 The following is an example of the data set that each object provides:
 
@@ -49,3 +49,74 @@ The `"runTime"` is the number of minutes an average show is.
 
 `"openDate"` references the offical opening date and doesn't account for preview performances.
 
+## Adding a Show
+
+When a new show opens and you need to add another data set use the following outline using the endpoint `api/shows`:
+
+```js
+{
+  "title": String,
+  "runTime": Number,
+  "theater": String,
+  "theaterAddress": String,
+  "directedBy": Array,
+  "bookBy": Array,
+  "musicBy": { 
+    type: Array,
+    require: false},
+  "openDate": Date,
+  "isClosing": Boolean,
+  "closeDate": {
+    type: Date,
+    require: false},
+  "intermission": Boolean,
+  "isMusical": Boolean,
+  "buyTickets": String,
+  "officialSite": String,
+  "posterImage": String
+}
+
+```
+For the `runTime` use the total amount of minutes.
+
+For the `theaterAddress` use the following format: "235 W 44th St"
+
+`directedBy`, `bookBy`, and `musicBy` should be formatted as an array of strings. If the is no music in the show, leave the array blank.
+
+`openDate` should be the offical opening and not include any previews or out of town runs.
+
+The format for `openDate` and `closeDate` should match the following: "yyyy-mm-dd"
+
+If the closing date hasn't been announced leave the value as `""`.
+
+`buyTickets`, `officialSite`, and `posterImage` are all links in the format of a String.
+
+## Updating a Show
+
+A show's info may need to be updated if a closing date is announced.
+
+There are two ways to update a show: by ID or by name.
+
+If using the ID, use the following format for your Update Request: `api/shows/id`
+
+If using the title, use the following format: `api/shows/name`
+
+**The title needs to be capitalized.**  `api/shows/Hamilton` will work. `api/shows/hamilton` will not. If the show has multiple words in the title the formatting should be as follows: `api/shows/The%20Lion%20King`. If the show has punctuation in the title just use it as normal. The formatting is: `api/shows/Moulin%20Rouge!` or `api/shows/&%20Juliet`.
+
+
+## Deleting a Show
+
+Once a show has closed it will need to beremoved from the data.
+
+There are two ways to delete a show: by ID or by name.
+
+If using the ID, use the following format for your Delete Request: `api/shows/id`
+
+If using the title, use the following format: `api/shows/name`
+
+**The title needs to be capitalized.** 
+`api/shows/Hamilton` will work. `api/shows/hamilton` will not. If the show has multiple words in the title the formatting should be as follows: `api/shows/The%20Lion%20King`. If the show has punctuation in the title just use it as normal. The formatting is: `api/shows/Moulin%20Rouge!` or `api/shows/&%20Juliet`.
+
+__________________________________
+
+See you at the show!
