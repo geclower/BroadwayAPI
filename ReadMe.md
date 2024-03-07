@@ -12,11 +12,12 @@ This is your one stop shop for shows that are currently playing on broadway!
 
 `api/shows/nonmusicals` - This will give an array of objects of only the plays currently running.
 
-`api/shows/*name of show*` - This will allow a singular search based on the title of the show. The formatting of this request is specific. The title does need to be capitalized. api/shows/Hamilton will work. api/shows/hamilton will not. If the show has multiple words in the title the formatting should be as follows: api/shows/The%20Lion%20King
+`api/shows/*name of show*` - This will allow a singular search based on the title of the show. The formatting of this request is specific. The title does need to be capitalized. `api/shows/Hamilton` will work. `api/shows/hamilton` will not. If the show has multiple words in the title the formatting should be as follows: `api/shows/The%20Lion%20King`. If the show has punctuation in the title just use it as normal. The formatting is: `api/shows/Moulin%20Rouge!` or `api/shows/&%Juliet`.
 
 The following is an example of the data set that each object provides:
 
- ```js {
+ ```js 
+ {
     "_id": "65e895506b0e691f8fe6c89f",
     "title": "Hadestown",
     "runTime": 145,
