@@ -135,3 +135,5 @@ __________________________________
 See you at the show!
 
 ![Gif of two actors bowing](https://i.gifer.com/7Qt7.gif)
+
+![a performer in front of a crowd](https://t3.ftcdn.net/jpg/01/64/66/74/360_F_164667494_g0a8Z5gKmCWmisKMzrgsybK5VAiiukwQ.jpg)
