@@ -134,8 +134,4 @@ __________________________________
 
 See you at the show!
 
-![Gif of two actors bowing](https://i.gifer.com/7Qt7.gif)
-
-![a performer in front of a crowd](https://t3.ftcdn.net/jpg/01/64/66/74/360_F_164667494_g0a8Z5gKmCWmisKMzrgsybK5VAiiukwQ.jpg)
-
 ![fred astaire bowing](https://media2.giphy.com/media/3orif3j4dRfClbz18k/giphy.gif?cid=6c09b952n5kh4ze3i41fw00vv9otazlohp5n1lzelsfwdl0p&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g)
